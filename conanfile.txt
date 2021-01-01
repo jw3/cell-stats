@@ -1,0 +1,6 @@
+[requires]
+  boron/1.4.2@hicktech/particle
+  SSD1306/2.4.1@hicktech/stable
+
+[generators]
+  cmake
