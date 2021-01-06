@@ -23,6 +23,8 @@ namespace display
       oled.printlnf("S: %i", state.strength);
       oled.setCursor(0, 15);
       oled.printlnf("Q: %i", state.quality);
+      oled.setCursor(0, 25);
+      oled.printlnf("%s", state.ready ? "OK" : "XX");
 
       oled.display();
    }

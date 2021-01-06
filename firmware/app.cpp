@@ -16,6 +16,7 @@ void loop() {
    if(now > last + delay_interval) {
       auto rssi = Cellular.RSSI();
       State state;
+      state.ready = Cellular.ready();
       state.quality = static_cast<byte>(rssi.getQuality());
       state.strength = static_cast<byte>(rssi.getStrength());
 
