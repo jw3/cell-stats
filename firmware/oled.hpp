@@ -19,10 +19,10 @@ namespace display
 
    void update(const State& state, Adafruit_SSD1306& oled) {
       oled.clearDisplay();
-      oled.setCursor(0, 10);
-      oled.printlnf("", state.strength);
-      oled.setCursor(5, 10);
-      oled.printlnf("", state.quality);
+      oled.setCursor(0, 5);
+      oled.printlnf("S: %i", state.strength);
+      oled.setCursor(0, 15);
+      oled.printlnf("Q: %i", state.quality);
 
       oled.display();
    }
